@@ -134,14 +134,14 @@ const About = () => {
                 Contact Me
               </a>
 
-        <a
-  href="/images/Jeshmitha%20S%20Resume.pdf"
-  download="Jeshmitha S Resume.pdf"
-  className="secondary-btn"
->
-  <Download size={18} />
-  Download Resume
-</a>
+              <a
+                href="/images/Jeshmitha%20S%20Resume.pdf"
+                download="Jeshmitha S Resume.pdf"
+                className="secondary-btn"
+              >
+                <Download size={18} />
+                Download Resume
+              </a>
 
             </div>
 
