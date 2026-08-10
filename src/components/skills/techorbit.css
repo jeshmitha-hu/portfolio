@@ -1,0 +1,570 @@
+/* ==========================================================
+   TECH ORBIT WRAPPER
+========================================================== */
+
+.tech-orbit-wrapper
+{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:700px 430px;
+
+    justify-content:center;
+
+    align-items:start;
+
+    column-gap:10px;
+}
+
+
+/* ==========================================================
+   LEFT ORBIT AREA
+========================================================== */
+
+.orbit-container
+{
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:flex-start;
+
+    padding-right:25px;
+}
+
+
+/* ==========================================================
+   ORBIT CIRCLE
+========================================================== */
+
+.orbit-circle
+{
+    position:relative;
+
+    width:520px;
+
+    height:520px;
+
+    margin-top:8px;
+
+    border-radius:50%;
+
+    background:transparent;
+}
+
+
+/* ==========================================================
+   SVG CONNECTION LINES
+========================================================== */
+
+.orbit-lines
+{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+
+/* ==========================================================
+   CENTER TECH STACK
+========================================================== */
+
+.orbit-center
+{
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:165px;
+
+    height:165px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #1A1A1A,
+            #121212
+        );
+
+    border:1px solid rgba(212,175,55,.28);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.35);
+
+    z-index:5;
+}
+
+.orbit-center span
+{
+    color:#D4AF37;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    letter-spacing:-.5px;
+}
+
+
+/* ==========================================================
+   SKILL NODES
+========================================================== */
+
+.orbit-node
+{
+    position:absolute;
+
+    transform:translate(-50%,-50%);
+
+    min-width:118px;
+
+    height:46px;
+
+    padding:0 22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:999px;
+
+    background:#1C1C1C;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    color:#F3F3F3;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    white-space:nowrap;
+
+    transition:
+        background .35s,
+        transform .35s,
+        border-color .35s,
+        box-shadow .35s;
+
+    z-index:10;
+}
+
+
+/* ==========================================================
+   ACTIVE NODE
+========================================================== */
+
+.orbit-node-active
+{
+    background:
+        linear-gradient(
+            135deg,
+            #7B1E3A,
+            #962D4D
+        );
+
+    color:#FFFFFF;
+
+    border-color:#D4AF37;
+
+    transform:translate(-50%,-50%) scale(1.06);
+
+    box-shadow:
+        0 10px 30px rgba(123,30,58,.30);
+}
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.orbit-node:hover
+{
+    background:
+        linear-gradient(
+            135deg,
+            #7B1E3A,
+            #962D4D
+        );
+
+    border-color:#D4AF37;
+
+    color:#FFFFFF;
+
+    transform:translate(-50%,-50%) scale(1.06);
+
+    box-shadow:
+        0 10px 28px rgba(123,30,58,.28);
+}
+
+/* ==========================================================
+   RIGHT INFORMATION PANEL
+========================================================== */
+
+.tech-info
+{
+    width:500px;
+
+    height:480px;
+
+    padding:10px 8px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    background:transparent;
+
+    border:none;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    overflow:visible;
+
+    transition:.35s;
+}
+.tech-info:hover
+{
+    transform:none;
+
+    box-shadow:none;
+}
+
+
+/* ==========================================================
+   CATEGORY
+========================================================== */
+
+.tech-category
+{
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:#D4AF37;
+
+    font-size:.92rem;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.tech-info h3
+{
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:#FFFFFF;
+
+    margin-bottom:18px;
+
+    line-height:1.1;
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.tech-info p
+{
+    max-width:440px;
+
+    color:#BDBDBD;
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+    margin-bottom:22px;
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.tech-block
+{
+    margin-top:0;
+}
+
+.tech-block li
+{
+    position:relative;
+
+    padding-left:22px;
+
+    margin-bottom:16px;
+
+    color:#ECECEC;
+
+    font-size:1.08rem;
+
+    font-weight:500;
+
+    line-height:1.7;
+}
+
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.tech-block ul
+{
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+}
+
+.tech-block li
+{
+    position:relative;
+
+    padding-left:16px;
+
+    color:#ECECEC;
+
+    font-size:.86rem;
+
+    line-height:1.3;
+
+    font-weight:500;
+}
+
+.tech-block li::before
+{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:8px;
+
+    width:5px;
+
+    height:5px;
+
+    border-radius:50%;
+
+    background:#D4AF37;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1400px)
+{
+    .tech-orbit-wrapper
+    {
+        grid-template-columns:580px 500px;
+
+        justify-content:center;
+
+        gap:40px;
+    }
+
+    .orbit-circle
+    {
+        width:470px;
+
+        height:470px;
+    }
+
+    .orbit-center
+    {
+        width:155px;
+
+        height:155px;
+    }
+
+    .orbit-center span
+    {
+        font-size:1.8rem;
+    }
+}
+
+
+@media (max-width:1200px)
+{
+    .tech-orbit-wrapper
+    {
+        grid-template-columns:1fr;
+
+        justify-items:center;
+
+        gap:55px;
+    }
+
+    .orbit-container
+    {
+        padding-left:0;
+    }
+
+    .tech-info
+    {
+        width:100%;
+
+        max-width:620px;
+
+        height:430px;
+    }
+}
+
+
+@media (max-width:768px)
+{
+    .orbit-circle
+    {
+        width:360px;
+
+        height:360px;
+    }
+
+    .orbit-center
+    {
+        width:120px;
+
+        height:120px;
+    }
+
+    .orbit-center span
+    {
+        font-size:1.45rem;
+    }
+
+    .orbit-node
+    {
+        min-width:90px;
+
+        height:40px;
+
+        padding:0 16px;
+
+        font-size:.80rem;
+    }
+
+    .tech-info
+    {
+        width:100%;
+
+        max-width:100%;
+
+        height:auto;
+
+        min-height:400px;
+
+        padding:24px;
+    }
+
+    .tech-info h3
+    {
+        font-size:1.8rem;
+    }
+
+    .tech-info p
+    {
+        font-size:.88rem;
+    }
+
+    .tech-block li
+    {
+        font-size:.84rem;
+    }
+}
+
+
+@media (max-width:480px)
+{
+    .orbit-circle
+    {
+        width:300px;
+
+        height:300px;
+    }
+
+    .orbit-center
+    {
+        width:100px;
+
+        height:100px;
+    }
+
+    .orbit-center span
+    {
+        font-size:1.2rem;
+    }
+
+    .orbit-node
+    {
+        min-width:75px;
+
+        height:34px;
+
+        padding:0 12px;
+
+        font-size:.72rem;
+    }
+
+    .tech-info
+    {
+        padding:20px;
+    }
+
+    .tech-info h3
+    {
+        font-size:1.6rem;
+    }
+}

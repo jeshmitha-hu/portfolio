@@ -1,0 +1,425 @@
+/* ==========================================================
+   CONTACT SECTION
+========================================================== */
+
+.contact
+{
+    width:min(1220px,88%);
+
+    margin:auto;
+
+    padding:90px 0 35px;
+
+    position:relative;
+}
+
+.contact::before
+{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(128,0,32,.10),
+            transparent 72%
+        );
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.contact-header
+{
+    text-align:center;
+
+    margin-bottom:22px;
+}
+
+.contact-tag
+{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:9px 22px;
+
+    border-radius:999px;
+
+    background:rgba(128,0,32,.15);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    color:#D4AF37;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+}
+
+.contact-header h2
+{
+    color:#FFFFFF;
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    margin-bottom:14px;
+}
+
+.contact-header h2 span
+{
+    color:#D4AF37;
+}
+
+.contact-header p
+{
+    width:min(640px,100%);
+
+    margin:auto;
+
+    color:#B6B6B6;
+
+    font-size:.95rem;
+
+    line-height:1.75;
+}
+
+
+/* ==========================================================
+   AVAILABILITY
+========================================================== */
+
+.availability
+{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#D4AF37;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin:22px 0 34px;
+}
+
+.availability-dot
+{
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#22C55E;
+
+    box-shadow:0 0 14px #22C55E;
+}
+
+
+/* ==========================================================
+   CONTACT CARD
+========================================================== */
+
+.contact-card
+{
+    max-width:850px;
+
+    margin:auto;
+
+    background:linear-gradient(
+        180deg,
+        #090909,
+        #141414
+    );
+
+    border:1px solid rgba(212,175,55,.12);
+
+    border-radius:24px;
+
+    padding:22px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px 24px;
+}
+
+/* ==========================================================
+   CONTACT ITEM
+========================================================== */
+
+.contact-item
+{
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px;
+
+    border-radius:14px;
+
+    transition:.35s ease;
+}
+
+.contact-item:hover
+{
+    background:rgba(212,175,55,.05);
+
+    transform:translateX(4px);
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.icon
+{
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:14px;
+
+    padding:12px;
+
+    background:linear-gradient(
+        135deg,
+        #7A1226,
+        #D4AF37
+    );
+
+    color:#FFFFFF;
+
+    flex-shrink:0;
+}
+
+.icon svg
+{
+    width:22px;
+
+    height:22px;
+}
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.contact-item h4
+{
+    color:#FFFFFF;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    margin-bottom:3px;
+}
+
+.contact-item p,
+.contact-item a
+{
+    color:#BEBEBE;
+
+    text-decoration:none;
+
+    font-size:.85rem;
+
+    line-height:1.55;
+
+    transition:.3s;
+}
+
+.contact-item a:hover
+{
+    color:#D4AF37;
+}
+
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.contact-button
+{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    width:200px;
+
+    height:48px;
+
+    margin:30px auto 0;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        #7A1226,
+        #D4AF37
+    );
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 10px 24px rgba(122,18,38,.25);
+}
+
+.contact-button:hover
+{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 16px 30px rgba(122,18,38,.35);
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px)
+{
+    .contact-card
+    {
+        grid-template-columns:1fr;
+
+        max-width:600px;
+    }
+}
+
+@media(max-width:768px)
+{
+    .contact
+    {
+        padding:75px 0;
+    }
+
+    .contact-header h2
+    {
+        font-size:2.35rem;
+    }
+
+    .contact-header p
+    {
+        font-size:.9rem;
+    }
+
+    .contact-card
+    {
+        padding:20px;
+
+        gap:12px;
+    }
+
+    .contact-item
+    {
+        padding:10px;
+    }
+
+    .icon
+    {
+        width:44px;
+
+        height:44px;
+    }
+
+    .icon svg
+    {
+        width:20px;
+
+        height:20px;
+    }
+
+    .contact-item h4
+    {
+        font-size:.95rem;
+    }
+
+    .contact-item p,
+    .contact-item a
+    {
+        font-size:.82rem;
+    }
+
+    .contact-button
+    {
+        width:100%;
+
+        height:46px;
+
+        font-size:.88rem;
+    }
+}
+
+@media(max-width:480px)
+{
+    .contact
+    {
+        width:94%;
+
+        padding:65px 0;
+    }
+
+    .contact-header h2
+    {
+        font-size:1.9rem;
+    }
+
+    .contact-tag
+    {
+        font-size:.72rem;
+
+        padding:8px 18px;
+    }
+}

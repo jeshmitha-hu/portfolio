@@ -1,0 +1,421 @@
+
+/* ==========================================================
+   EXPERIENCE WRAPPER
+========================================================== */
+
+.experience-wrapper
+{
+    margin-top:20px;
+}
+
+
+/* ==========================================================
+   EXPERIENCE CARD
+========================================================== */
+
+.experience-card
+{
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    align-items:center;
+
+    gap:45px;
+
+    width:100%;
+}
+
+
+/* ==========================================================
+   LEFT PANEL
+========================================================== */
+
+.experience-left
+{
+    width:100%;
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.experience-top
+{
+    margin-bottom:28px;
+}
+
+.experience-top h3
+{
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin-bottom:12px;
+
+    color:#FFFFFF;
+
+    font-size:2.45rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+}
+
+.experience-duration
+{
+    color:#D4AF37;
+
+    font-size:1.15rem;
+
+    font-weight:700;
+}
+
+.experience-top h4
+{
+    color:#D4AF37;
+
+    font-size:1.15rem;
+
+    font-weight:600;
+}
+
+
+/* ==========================================================
+   RESPONSIBILITIES
+========================================================== */
+
+.experience-list
+{
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+}
+
+.experience-list li
+{
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:16px;
+
+    color:#D2D2D2;
+
+    font-size:1rem;
+
+    line-height:1.75;
+}
+
+.experience-list li::before
+{
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    font-size:1rem;
+}
+
+
+/* ==========================================================
+   TECH STACK
+========================================================== */
+
+.experience-tech
+{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:28px;
+}
+
+.experience-tech span
+{
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#14080A;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    color:#D4AF37;
+
+    font-size:.88rem;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.experience-tech span:hover
+{
+    background:#800020;
+
+    border-color:#D4AF37;
+
+    color:#FFFFFF;
+}
+
+
+/* ==========================================================
+   RIGHT
+========================================================== */
+
+.experience-right
+{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+/* ==========================================================
+   CERTIFICATE
+========================================================== */
+
+.certificate-image
+{
+    width:100%;
+
+    max-width:650px;
+
+    height:470px;
+
+    object-fit:contain;
+
+    border-radius:16px;
+
+    transition:.35s;
+
+    filter:drop-shadow(
+        0 18px 36px rgba(0,0,0,.35)
+    );
+}
+
+.certificate-image:hover
+{
+    transform:scale(1.02);
+}
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width:1200px)
+{
+    .experience
+    {
+        width:min(95%,1400px);
+
+        padding:90px 0;
+    }
+
+    .education-timeline
+    {
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:24px;
+
+        margin-bottom:80px;
+    }
+
+    .timeline-line
+    {
+        display:none;
+    }
+
+    .education-card
+    {
+        width:100%;
+
+        min-height:340px;
+    }
+
+    .achievement-grid
+    {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .experience-card
+    {
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+    .experience-right
+    {
+        order:-1;
+    }
+
+    .certificate-image
+    {
+        max-width:520px;
+
+        height:auto;
+    }
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:768px)
+{
+    .experience
+    {
+        width:94%;
+
+        padding:70px 0;
+    }
+
+    .experience-header
+    {
+        margin-bottom:45px;
+    }
+
+    .experience-header h2
+    {
+        font-size:2.6rem;
+    }
+
+    .experience-header p
+    {
+        font-size:.96rem;
+
+        line-height:1.8;
+    }
+
+    .education-timeline
+    {
+        grid-template-columns:1fr;
+
+        gap:22px;
+
+        margin-top:45px;
+
+        margin-bottom:70px;
+    }
+
+    .education-card
+    {
+        min-height:auto;
+
+        padding:22px;
+    }
+
+    .education-icon
+    {
+        width:56px;
+
+        height:56px;
+
+        font-size:1.4rem;
+    }
+
+    .education-card h3
+    {
+        font-size:1.25rem;
+    }
+
+    .education-card h4
+    {
+        font-size:.92rem;
+    }
+
+    .achievement-grid
+    {
+        grid-template-columns:1fr;
+    }
+
+    .achievement-card
+    {
+        min-height:170px;
+    }
+
+    .experience-top h3
+    {
+        font-size:2rem;
+    }
+
+    .experience-duration
+    {
+        font-size:1rem;
+    }
+
+    .experience-top h4
+    {
+        font-size:1rem;
+    }
+
+    .experience-list li
+    {
+        font-size:.95rem;
+
+        line-height:1.6;
+    }
+
+    .experience-tech span
+    {
+        padding:9px 15px;
+
+        font-size:.82rem;
+    }
+
+    .certificate-image
+    {
+        width:100%;
+
+        height:auto;
+    }
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:480px)
+{
+    .experience-header h2
+    {
+        font-size:2.1rem;
+    }
+
+    .education-card
+    {
+        border-radius:18px;
+    }
+
+    .achievement-card
+    {
+        border-radius:18px;
+    }
+
+    .experience-top h3
+    {
+        font-size:1.6rem;
+    }
+}
